@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a6a5d;
+}
+
+/* IMAGEM PERSONAGEM IZUKU */
+
+.background img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 550px;
+    height: 480px;
+}
+
+/* FIM DO CÓDIGO DA IMAGEM */
+
+/* LOGO E MENU */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+}
+
+.logo {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 46px;
+    transition: .3s ease;
+}
+
+.logo:hover {
+    cursor: pointer;
+    text-shadow: 5px 5px 10px #37c7af;
+}
+
+.navigation {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.navigation::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -2px;
+    left: 10px;
+    transition: .4s ease;
+    background-color: #37c7af;
+}
+
+.navigation:hover {
+    color: #37c7af;
+}
+
+.navigation::after {
+    width: 0;
+    height: 2px;
+}
+
+.navigation:hover::after {
+    width: 50%;
+}
+
+/* FIM DA LOGO E MENU */
+
+/* CONTÉUDO PRINCIPAL */
+
+.important {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-left: 5%;
+    margin-top: 100px;
+}
+
+.section {
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+span { 
+    color: #c25262;
+}
+
+p {
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.button {
+    margin-top: 70px;
+    text-align: start;
+}
+
+.btn {
+    color: white;
+    padding: 10px 25px;
+    margin: 0 3% 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-decoration: none;
+    border: 3px solid #37c7af;
+    border-radius: 10px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #37c7af;
+    z-index: -1;
+    transition: .5s ease;
+    
+}
+
+.btn::before {
+    width: 0;
+    height: 100%;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+/* FIM DO CONTEÚDO PRINCIPAL */
